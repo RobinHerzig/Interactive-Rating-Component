@@ -1,24 +1,17 @@
 html, body {
   height: 100%;
-  width: 100%;
   background: black;
   color: white;
+  display: grid; /*  Center rating box */
+  place-items: center; /*  Center rating box */
 }
 
-.rating {
+#ratingBox, #thankYouBox {
   margin: 2rem;
   padding: 2em;
   border-radius: .5em;
   background: rgba(26,33,43,255);
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
+  width: 18rem;
 }
 
 ul {
@@ -27,12 +20,14 @@ ul {
   justify-content: space-between;
 }
 li {
+  height: 3em;
+  width: 3em;
   background: rgba(33,40,50,255);
-  padding: 1em;
-/*   margin: 0 1rem; */
   border-radius: 50%;
   list-style: none;
   cursor: pointer;
+  display: grid; /*  Center rating box */
+  place-items: center; /*  Center rating box */
 }
 
 li:hover{
@@ -50,12 +45,12 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button:hover, .selectedRating:hover {
   background-color: orange;
 }
 
-.thankYou {
-  visibility: hidden;
+.hidden {
+  display: none;
 }
 
 .selectedRating {
