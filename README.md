@@ -26,7 +26,7 @@
 <!--     <img src="https://img.shields.io/static/v1?label=|&message=FIREBASE&color=cbb148&style=plastic&logo=firebase"/> -->
 </p>
 
-Receive use ratings by implementing this easy to use component!
+Receive user ratings by implementing this easy-to-use component!
 
 ## How It's Made:
 
@@ -35,9 +35,9 @@ This project was built using HTML, CSS, and JavaScript.
 Special thanks to FrontEndMentor for providing the design and startup files!
 https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI
 
-## Optimizations
+## Optimizations:
 
-At the moment, this component only contains frontend logic. To send the rating to a database, we recommend modifying the button to perform a POST or PUT request and coding the server to receive the rating and store it in the database.
+Currently, this component only contains frontend logic. To send the rating to a database, we recommend modifying the button to perform a POST or PUT request and coding the server to receive the rating and store it in the database.
 
 ## Lessons Learned:
 
