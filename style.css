@@ -14,12 +14,13 @@ html, body {
   width: 18rem;
 }
 
-ul {
+#ratingBox ul {
   display: flex;
   padding: 0;
   justify-content: space-between;
 }
-li {
+
+#ratingBox li {
   height: 3em;
   width: 3em;
   background: rgba(33,40,50,255);
@@ -28,31 +29,37 @@ li {
   cursor: pointer;
   display: grid; /*  Center rating box */
   place-items: center; /*  Center rating box */
+  user-select: none; /*  Disable highlighting text */
 }
 
-li:hover{
-  background: gray;
+#ratingBox li:hover {
+  background: rgba(73,80,90,255);
 }
 
-button {
+#ratingBox button {
   background-color: #fc7613;
   color: white;
   width: 100%;
   padding: .5em 0;
-/*   margin: 1rem; */
   border: none;
   border-radius: 15px;
   cursor: pointer;
+  user-select: none; /*  Disable highlighting text */
 }
 
-button:hover, .selectedRating:hover {
-  background-color: orange;
+#ratingBox button:hover {
+  background-color: #ff9448;
+}
+
+#ratingBox .selectedRating,  #ratingBox .selectedRating:hover {
+  background-color: #fc7613;
+}
+
+#ratingBox button.inactive {
+  background: rgba(33,40,50,255);
+  cursor: auto;
 }
 
 .hidden {
   display: none;
-}
-
-.selectedRating {
-  background-color: #fc7613;
 }
